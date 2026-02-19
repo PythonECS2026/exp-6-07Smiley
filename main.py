@@ -3,16 +3,14 @@
 # Date:
 print("List of Students:")
 
-# input names (comma separated)
-cet = set(input().split(","))
-jee = set(input().split(","))
-neet = set(input().split(","))
+cet = {"Alice", "Bob", "Charlie", "Frank"}
+jee = {"Bob", "Eve", "Frank", "Heidi"}
+neet = {"Bob", "Charlie", "Karl", "Liam"}
 
 print(f"CET Students: {cet}")
 print(f"JEE Students: {jee}")
 print(f"NEET Students: {neet}")
 
-# set operations
 all_students = cet | jee | neet
 print(f"All Students: {all_students}")
 
@@ -24,7 +22,6 @@ print(f"JEE but not for NEET: {jee_not_neet}")
 
 cet_and_neet_not_jee = (cet & neet) - jee
 print(f"CET and NEET but not for JEE: {cet_and_neet_not_jee}")
-
 # Write your code here
 # TODO: Find and Print All the Students appearing for any Entrance Exam
 
@@ -33,4 +30,5 @@ print(f"CET and NEET but not for JEE: {cet_and_neet_not_jee}")
 # TODO: Find and Print Students appearing for JEE but not for NEET
 
 # TODO: Find and Print Students appearing for CET and NEET but not for JEE
+
 
